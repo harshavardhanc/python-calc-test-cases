@@ -7,18 +7,18 @@ jobs:
     steps:
       - checkout
 
-    - run:
-        name: install pip
-        command: sudo apt update && sudo apt install python-pip
-
-    - run:
-        name: install coverage
-        command: sudo pip install coverage
-        
-    - run:
-        name: run test cases
-        command: coverage run test_calculator.py
-
-    - run:
-        name: coverage report
-        command: coverage xml
+      - run:
+          name: install pip
+          command: sudo apt update && sudo apt install python-pip
+  
+      - run:
+          name: install coverage
+          command: sudo pip install coverage
+          
+      - run:
+          name: run test cases
+          command: coverage run test_calculator.py
+  
+      - run:
+          name: coverage report
+          command: coverage xml
