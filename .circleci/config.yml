@@ -7,14 +7,14 @@ jobs:
     steps:
       - checkout
 
-    - run:
-        name: install coverage
-        command: pip install coverage
+      - run:
+          name: install coverage
+          command: pip install coverage
         
-    - run:
-        name: run test cases
-        command: coverage run test_calculator.py
+      - run:
+          name: run test cases
+          command: coverage run test_calculator.py
 
-    - run:
-        name: coverage report
-        command: coverage xml
+      - run:
+          name: coverage report
+          command: coverage xml
