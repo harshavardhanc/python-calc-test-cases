@@ -13,5 +13,6 @@ def divide(x, y):
         raise ValueError("Number cannot be divided by 0.")
     return x / y
 
+
 def pow(x, y):
     return x ** y
